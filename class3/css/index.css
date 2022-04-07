@@ -73,16 +73,16 @@ nav {
 
 /* News Section */
 .news {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 2rem 0.5rem;
     background-color: var(--primary-color);
+    padding: 2rem 0.5rem;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.news > :first-child {
-    text-align: end;
+.news > * {
+    padding: 0rem 1rem;
 }
 
 /* Languages Section */
