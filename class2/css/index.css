@@ -1,0 +1,158 @@
+/* Aplica margen y padding a todos los div del elemento body. */
+body > div {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    color: blue;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.border-left {
+    border-left: 1px solid black;
+}
+
+.border-right {
+    border-right: 1px solid black;
+}
+
+.border-bottom {
+    border-bottom: 1px solid black;
+}
+
+.border-top {
+    border-top: 1px solid black;
+}
+
+.border-radius {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.background-image {
+    background-image: linear-gradient(rgb(237, 160, 160), rgb(250, 24, 24));
+}
+
+.color {
+    color: rgb(4, 26, 126);
+}
+
+.font {
+    font: italic 1.2em "Fira Sans", serif;
+}
+
+.font-family {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.font-style {
+    font-style: italic;
+}
+
+.font-weight {
+    font-weight: 600;
+}
+
+.width {
+    width: 50%;
+    border: 1px solid;
+}
+
+.height {
+    height: 300px;
+    border: 1px solid;
+}
+
+.list-style{
+    list-style: square inside linear-gradient(rgba(0, 255, 115, 0.543),rgb(91, 7, 156));
+}
+
+.margin {
+    margin: 100px;
+    background-color: aqua;
+}
+
+.padding {
+    padding: 100px;
+    background-color: rgba(48, 220, 65, 0.62);
+    position: relative;
+    border: 1px solid;
+}
+
+.padding::before {
+    content: "Padding";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: blue;
+    font-style: italic;
+
+}
+
+.overflow {
+    overflow: scroll;
+    border: 1px solid;
+    height: 10em; 
+    line-height: 2em;
+}
+
+.overflow--hidden {
+    overflow: hidden;
+}
+
+.block {
+    display: block;
+    background-color: aqua;
+}
+
+.inline {
+    display: inline;
+    background-color: aqua;
+}
+
+.flex {
+    display: flex;
+    background-color: aqua;
+    flex-direction: column;
+}
+
+.flex--inline {
+    display: inline-flex;
+   
+}
+
+.grid {
+    display: grid;
+    background-color: aqua;
+}
+
+.absolute {
+    position: absolute;
+    left: 100px;
+}
+
+.relative {
+    position: relative;
+    left: 100px;
+}
+
+.filter {
+    filter: grayscale(100%)
+}
+
+.filter--blur {
+    filter: blur(1px)
+}
+
+.filter--contrast {
+    filter: contrast(300%)
+}
