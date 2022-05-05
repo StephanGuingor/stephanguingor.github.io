@@ -1,0 +1,204 @@
+/* CSS Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Base Style */
+.page {
+  height: 100vh;
+  font-size: 1.5rem;
+  background-color: rgb(18, 18, 59);
+  scroll-snap-align: start;
+}
+
+.page div {
+  text-align: justify;
+  align-items: center;
+  display: grid;
+  padding: 0 0.5rem;
+  overflow: hidden;
+}
+
+/* Color Elements */
+.page div:nth-child(6n + 1) {
+  background-color: rgb(248, 38, 38);
+}
+
+.page div:nth-child(6n + 2) {
+  background-color: rgb(248, 90, 33);
+}
+
+.page div:nth-child(6n + 3) {
+  background-color: rgb(252, 174, 29);
+}
+
+.page div:nth-child(6n + 4) {
+  background-color: rgb(51, 204, 64);
+}
+
+.page div:nth-child(6n + 5) {
+  background-color: rgba(41, 245, 194, 0.863);
+}
+
+.page div:nth-child(6n + 6) {
+  background-color: rgba(127, 255, 212, 0.863);
+}
+
+/* Grids */
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid2 {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid2 div:nth-child(1) {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.grid2 div:nth-child(2) {
+  grid-column: 3 / 3;
+  grid-row: 1 / span 2;
+}
+
+.grid3 {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid3 div:nth-child(1) {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+
+.grid3 div:nth-child(3) {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+}
+
+.grid3 div:nth-child(4) {
+  grid-column: 1 / span 4;
+  grid-row: 3;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.grid5 {
+  display: grid;
+  grid-template-areas:
+    "a a b c"
+    "d e f ."
+    "g g h i"
+    "g g j ."
+    "k k k l";
+  gap: 1rem;
+}
+
+.grid5 div:nth-child(1) {
+  grid-area: a;
+}
+.grid5 div:nth-child(2) {
+  grid-area: b;
+}
+.grid5 div:nth-child(3) {
+  grid-area: c;
+}
+.grid5 div:nth-child(4) {
+  grid-area: d;
+}
+.grid5 div:nth-child(5) {
+  grid-area: e;
+}
+.grid5 div:nth-child(6) {
+  grid-area: f;
+}
+.grid5 div:nth-child(7) {
+  grid-area: g;
+}
+.grid5 div:nth-child(8) {
+  grid-area: h;
+}
+.grid5 div:nth-child(9) {
+  grid-area: i;
+}
+.grid5 div:nth-child(10) {
+  grid-area: j;
+}
+.grid5 div:nth-child(11) {
+  grid-area: k;
+}
+.grid5 div:nth-child(12) {
+  grid-area: l;
+}
+
+.grid6 {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr;
+}
+
+.subpage {
+  background-color: rgb(96, 49, 141) !important;
+  padding: 1rem !important;
+}
+
+.grid6-1 {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid6-1 div:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+.grid6-1 div {
+  height: 100%;
+}
+
+.grid7 {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid7 div:nth-child(8) {
+  grid-column: 3 / 6;
+}
+
+.grid7 div:nth-child(9) {
+  grid-column: 1 / span 5;
+}
+
+.grid8 {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid8 div:nth-child(1) {
+  grid-column: 1 / span 3;
+}
+
+.grid8 div:nth-child(2) {
+  grid-row: 2 / span 2;
+}
+
+.grid8 div:nth-child(3) {
+  grid-column: 2 / span 2;
+}
